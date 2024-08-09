@@ -1,0 +1,5 @@
+az login -u student-1271-2418581@labscloudacademy.onmicrosoft.com -p Ca1_dICnkOVn
+
+terraform init
+
+terraform apply -var='vnet_address_space=["10.0.0.0/16"]' -var='snet_address_space=["10.0.0.0/24"]' -var="location=southcentralus"
